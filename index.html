@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Заполните форму</h1>
+    <form action="#" method="get">
+        <div class="border">
+            <div>
+                <p class="orange">Имя</p>
+                <input type="text" name="username" value="Текст" >
+            </div>
+            <div>
+                <p class="orange">Фамилия</p>
+                <input placeholder="Котофеич" type="text" name="surname" >
+            </div>
+            <div>
+                <p class="orange">Телефон</p>
+                <input  type="tel" name="userphone"  >
+            </div>
+            <div>
+                <p>Пароль</p>
+                <input  type="password" name="userpass" >
+            </div>
+            <div>
+                <p>Пол</p>
+                <div>
+                    <input  type="radio" name="gender" value="man"> Мужской
+                </div>
+                <div>
+                    <input  type="radio" name="gender" value="woman"> Женский
+                </div>
+            </div>
+            <div>
+                <p>Любимое пиво</p>
+                <div>
+                    <input  type="checkbox" name="preferences" value="beer"> Темное
+                </div>
+                <div>
+                    <input  type="checkbox" name="preferences" value="beer"> Светлое 
+                </div>
+                <div>
+                    <input  type="checkbox" name="preferences" value="beer"> Рыжее 
+                </div>
+            </div>
+            <div>
+                <p>О себе</p>
+               <textarea  type="text"></textarea>
+            </br>
+            <p>Ваше фото</p>
+               <input type="file">
+            </div>
+            <div>
+                <p>Возраст</p>
+                <select name="old" >
+                    <option value="10">До десяти</option>
+                    <option value="20">До двадцати</option>
+                    <option selected value="30">До тридцати</option>
+                </select>
+            </div>
+            <div>
+                <p>Завершить</p>
+                <button type="submit">Отпарвить</button>
+                <button type="reset">Сбросить</button>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia aspernatur nihil architecto voluptates. Vitae praesentium officiis ratione perspiciatis animi odit nesciunt earum error perferendis eaque repudiandae, architecto ipsa optio!</p>
+        <table border="1">
+            <tr>
+               <th>Заголовок столбца 1</th>
+               <th>Заголовок столбца 2</th>
+               <th>Заголовок столбца 3</th>
+            </tr>
+            <tr>
+               <td>Строка 2, ячейка 1</td>
+               <td colspan="2">Строка 2, ячейка 2, также захватывается Строка 2, ячейка 3</td>
+            </tr>
+            <tr>
+               <td rowspan="2">Строка 3, ячейка 1, также захватывается Строка 4, ячейка 1</td>
+               <td>Строка 3, ячейка 2</td>
+               <td>Строка 3, ячейка 3</td>
+            </tr>
+            <tr>
+               <td>Строка 4, ячейка 2</td>
+               <td>Строка 4, ячейка 3</td>
+            </tr>
+         </table>
+         <h2>Несколько случайных словарных статей</h2>
+         <dl>
+            <dt>HTML</dt>
+            <dd>Аббревиатура от HyperText Markup Language – язык для создания веб-страниц.</dd>
+         
+            <dt>Собака</dt>
+            <dd>Любое хищное животное из семейства Canidae.</dd>
+            <dd>Одомашненная разновидность животного семейства Canidae, Canis lupus familiaris.</dd>
+         
+            <dt>Молоко</dt>
+            <dt>Кошачье пиво</dt>
+            <dd>Белая жидкость, которую производят коровы и которую люди использую в пищу.</dd>
+         </dl>
+         <a href="#top" onclick="alert ('ух ты. Javascript.')">Нажми сюда</a>
+         
+</body>
+</html>
